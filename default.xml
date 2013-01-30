@@ -300,7 +300,7 @@
   <project path="sdk" remote="androvm" name="platform_sdk" revision="androVM-4.1.1_r6.1" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" remote="androvm" name="platform_system_core" revision="androVM-4.1.1_r6.1" />
-  <project path="system/extras" name="platform/system/extras" />
+  <project path="system/extras" remote="androvm" name="platform_system_extras" revision="androVM-4.1.1_r6.1" />
   <project path="system/media" name="platform/system/media" />
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" />
