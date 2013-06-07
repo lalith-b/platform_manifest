@@ -297,7 +297,7 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
-  <project path="sdk" remote="androvm" name="platform_sdk" revision="androVM-4.1.1_r6.1" />
+  <project path="sdk" remote="androvm" name="platform_sdk" revision="genyd_dev_01" />
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" remote="androvm" name="platform_system_core" revision="androVM-4.1.1_r6.1" />
   <project path="system/extras" remote="androvm" name="platform_system_extras" revision="androVM-4.1.1_r6.1" />
