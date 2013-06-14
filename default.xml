@@ -190,7 +190,7 @@
   <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
   <project path="external/v8" name="platform/external/v8" />
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
-  <project path="external/webkit" remote="androvm" name="platform_external_webkit" />
+  <project path="external/webkit" remote="androvm" name="platform_external_webkit" revision="genymotion-4.2.2_r1.2"/>
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
   <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
