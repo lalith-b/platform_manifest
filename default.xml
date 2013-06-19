@@ -346,7 +346,7 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
 
   <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-4.2.2_r1.2" />
-  <project path="external/busybox" remote="androvm" name="platform_external_busybox" revision="androVM-4.1.1_r6.1" />
+  <project path="external/busybox" remote="androvm" name="platform_external_busybox" revision="genymotion-4.2.2_r1.2" />
   <project path="packages/apps/Superuser" remote="androvm" name="platform_packages_apps_Superuser" revision="androVM-4.1.1_r6.1" />
 
 </manifest>
