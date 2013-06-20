@@ -20,7 +20,7 @@
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" />
   <project path="dalvik" remote="androvm" name="platform_dalvik" revision="genymotion-4.2.2_r1.2" />
-  <project path="development" name="platform/development" />
+  <project path="development" remote="androvm" name="platform_development" revision="genymotion-4.2.2_r1.2" />
   <project path="device/asus/grouper" name="device/asus/grouper" groups="device,grouper" />
   <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
   <project path="device/common" name="device/common" />
