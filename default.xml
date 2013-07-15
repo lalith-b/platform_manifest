@@ -202,7 +202,7 @@
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" remote="androvm" name="platform_frameworks_av" revision="genymotion-4.2.2_r1.2" groups="pdk" />
   <project path="frameworks/base" remote="androvm" name="platform_frameworks_base" revision="genymotion-4.2.2_r1.2" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
+  <project path="frameworks/compile/libbcc" remote="androvm" name="platform_frameworks_compile_libbcc" revision="genymotion-4.2.2_r1.2" groups="pdk" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" groups="pdk" />
   <project path="frameworks/compile/llvm-ndk-cc" name="platform/frameworks/compile/llvm-ndk-cc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
