@@ -185,7 +185,7 @@
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" remote="androvm" name="platform_frameworks_av" revision="androVM-4.1.1_r6.1" />
   <project path="frameworks/base" remote="androvm" name="platform_frameworks_base" revision="genyd_dev_01" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
+  <project path="frameworks/compile/libbcc" remote="androvm" name="platform_frameworks_compile_libbcc" revision="androVM-4.1.1_r6.1" />
   <project path="frameworks/compile/linkloader" name="platform/frameworks/compile/linkloader" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
