@@ -16,7 +16,7 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bionic" remote="androvm" name="platform_bionic" groups="pdk" revision="genymotion-4.2.2_r1.2" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" remote="androvm" name="platform_bootable_diskinstaller" revision="androVM-4.1.1_r6.1" />
+  <project path="bootable/diskinstaller" remote="androvm" name="platform_bootable_diskinstaller" revision="genymotion-4.1.1_r6.1" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" />
   <project path="dalvik" remote="androvm" name="platform_dalvik" revision="genymotion-4.2.2_r1.2" />
@@ -347,6 +347,6 @@
 
   <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-4.2.2_r1.2" />
   <project path="external/busybox" remote="androvm" name="platform_external_busybox" revision="genymotion-4.2.2_r1.2" />
-  <project path="packages/apps/Superuser" remote="androvm" name="platform_packages_apps_Superuser" revision="androVM-4.1.1_r6.1" />
+  <project path="packages/apps/Superuser" remote="androvm" name="platform_packages_apps_Superuser" revision="genymotion-4.1.1_r6.1" />
 
 </manifest>
