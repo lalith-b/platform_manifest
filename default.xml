@@ -355,7 +355,7 @@
   <!-- File manager from CyanogenMod !-->
   <project path="packages/apps/CMFileManager" remote="github" name="CyanogenMod/android_packages_apps_CMFileManager" revision="cm-10.1" />
   <!-- Super user app & dependencies from Koushik Dutta !-->
-  <project path="external/apps/Superuser" remote="github" name="koush/Superuser" revision="master" />
-  <project path="external/apps/Widgets" remote="github" name="koush/Widgets" revision="master" />
+  <project path="packages/apps/Superuser" remote="github" name="koush/Superuser" revision="master" />
+  <project path="packages/apps/Widgets" remote="github" name="koush/Widgets" revision="master" />
 
 </manifest>
