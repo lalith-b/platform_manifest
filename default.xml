@@ -3,10 +3,13 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com" />
+
   <remote  name="androvm"
            fetch="./" />
-  <remote  name="cm"
-           fetch="https://github.com/CyanogenMod" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
   <default revision="refs/tags/android-4.1.1_r6.1"
            remote="aosp"
            sync-j="4" />
@@ -307,10 +310,13 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/security" name="platform/system/security" />
   <project path="system/vold" remote="androvm" name="platform_system_vold" revision="genymotion-4.1.1_r6.1" />
-
-  <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-4.1.1_r6.1" />
   <project path="external/busybox" remote="androvm" name="platform_external_busybox" revision="genymotion-4.1.1_r6.1" />
-  <project path="packages/apps/Superuser" remote="androvm" name="platform_packages_apps_Superuser" revision="genymotion-4.1.1_r6.1" />
-  <project path="packages/apps/CMFileManager" remote="cm" name="android_packages_apps_CMFileManager" revision="jellybean" />
+  <!-- Genymotion device !-->
+  <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-4.1.1_r6.1" />
+  <!-- File manager from CyanogenMod !-->
+  <project path="packages/apps/CMFileManager" remote="github" name="CyanogenMod/android_packages_apps_CMFileManager" revision="jellybean" />
+  <!-- Super user app & dependencies from Koushik Dutta !-->
+  <project path="external/apps/Superuser" remote="github" name="koush/Superuser" revision="master" />
+  <project path="external/apps/Widgets" remote="github" name="koush/Widgets" revision="master" />
 
 </manifest>
