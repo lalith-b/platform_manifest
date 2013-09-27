@@ -185,6 +185,7 @@
   <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-2.3.7_r1" />
   <!-- ALSA !-->
   <project path="external/alsa-lib" remote="androvm" name="external_alsa" revision="genymotion-2.3.7_r1" />
+  <project path="external/alsa-utils" remote="androvm" name="external_alsa_utils" revision="genymotion-2.3.7_r1" />
   <project path="hardware/alsa_sound" remote="androvm" name="hardware_alsa" revision="genymotion-2.3.7_r1" />
 
 </manifest>
