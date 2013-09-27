@@ -2,26 +2,34 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com"
+           review="https://android-review.googlesource.com/" />
+
+  <remote  name="androvm"
+           fetch="./" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
   <default revision="refs/tags/android-4.3_r3.1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" remote="androvm" name="platform_build" groups="pdk" revision="genymotion-4.3.3_r3.1" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
-  <project path="bionic" name="platform/bionic" groups="pdk" />
+  <project path="bionic" remote="androvm" name="platform_bionic" groups="pdk" revision="genymotion-4.3.3_r3.1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
+  <project path="bootable/diskinstaller" remote="androvm" name="platform_bootable_diskinstaller" revision="genymotion-4.1.1_r6.1" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts" />
-  <project path="dalvik" name="platform/dalvik" />
+<project path="dalvik" remote="androvm" name="platform_dalvik" revision="genymotion-4.3.3_r3.1" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
-  <project path="development" name="platform/development" />
+  <project path="development" remote="androvm" name="platform_development" revision="genymotion-4.3.3_r3.1" />
   <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
   <project path="device/asus/flo" name="device/asus/flo" groups="device,flo" />
   <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
@@ -95,7 +103,7 @@
   <project path="external/genext2fs" name="platform/external/genext2fs" />
   <project path="external/giflib" name="platform/external/giflib" />
   <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" />
-  <project path="external/grub" name="platform/external/grub" />
+  <project path="external/grub" remote="androvm" name="platform_external_grub" revision="genymotion-4.3.3_r3.1" />
   <project path="external/gtest" name="platform/external/gtest" groups="pdk" />
   <project path="external/guava" name="platform/external/guava" />
   <project path="external/hamcrest" name="platform/external/hamcrest" />
@@ -202,24 +210,26 @@
   <project path="external/tremolo" name="platform/external/tremolo" groups="pdk" />
   <project path="external/v8" name="platform/external/v8" />
   <project path="external/valgrind" name="platform/external/valgrind" groups="pdk" />
-  <project path="external/webkit" name="platform/external/webkit" />
+  <project path="external/webkit" remote="androvm" name="platform_external_webkit" revision="genymotion-4.3.3._r3.1"/>
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
+  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
+  <project path="external/wpa_supplicant_8" remote="androvm" name="platform_external_wpa_supplicant_8" groups="pdk" revision="genymotion-4.3.3_r3.1" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/av" remote="androvm" name="platform_frameworks_av" revision="genymotion-4.3.3_r3.1" groups="pdk" />
+  <project path="frameworks/base" remote="androvm" name="platform_frameworks_base" revision="genymotion-4.3.3_r3.1" />
+<project path="frameworks/compile/libbcc" remote="androvm" name="platform_frameworks_compile_libbcc" revision="genymotion-4.3.3_r3.1" groups="pdk" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
   <project path="frameworks/mff" name="platform/frameworks/mff" />
   <project path="frameworks/ml" name="platform/frameworks/ml" />
-  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" />
+  <project path="frameworks/native" remote="androvm" name="platform_frameworks_native" revision="genymotion-4.3.3_r3.1" groups="pdk" />
   <project path="frameworks/opt/calendar" name="platform/frameworks/opt/calendar" />
   <project path="frameworks/opt/carddav" name="platform/frameworks/opt/carddav" />
   <project path="frameworks/opt/colorpicker" name="platform/frameworks/opt/colorpicker" />
@@ -243,7 +253,7 @@
   <project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="pdk" />
   <project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="broadcom_wlan" />
   <project path="hardware/invensense" name="platform/hardware/invensense" groups="invensense" />
-  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
+  <project path="hardware/libhardware" remote="androvm" name="platform_hardware_libhardware" revision="genymotion-4.3.3_r3.1" groups="pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/msm7k" name="platform/hardware/msm7k" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
@@ -262,7 +272,7 @@
   <project path="hardware/ti/wlan" name="platform/hardware/ti/wlan" />
   <project path="hardware/ti/wpan" name="platform/hardware/ti/wpan" />
   <project path="libcore" name="platform/libcore" />
-  <project path="libnativehelper" name="platform/libnativehelper" groups="pdk-java" />
+  <project path="libnativehelper" remote="androvm" name="platform_libnativehelper" revision="genymotion-4.3.3_r3.1" groups="pdk-java" />
   <project path="ndk" name="platform/ndk" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
@@ -279,11 +289,11 @@
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
-  <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" />
+  <project path="packages/apps/Gallery2" remote="androvm" name="platform_packages_apps_Gallery2" revision="genymotion-4.3.3_r3.1" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
-  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
+  <project path="packages/apps/LegacyCamera" remote="androvm" name="platform_package_apps_legacy_Camera" revision="genymotion-4.3.3_r3.1" />
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
@@ -295,7 +305,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" remote="androvm" name="platform_packages_apps_Settings" revision="genymotion-4.3.3_r3.1" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -363,14 +373,14 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="pdk" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
-  <project path="sdk" name="platform/sdk" />
+  <project path="sdk" remote="androvm" name="platform_sdk" revision="genymotion-4.3.3_r3.1" />
   <project path="system/bluetooth" name="platform/system/bluetooth" groups="pdk" />
-  <project path="system/core" name="platform/system/core" groups="pdk" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
+  <project path="system/core" remote="androvm" name="platform_system_core" revision="genymotion-4.3.3_r3.1" groups="pdk" />
+  <project path="system/extras" remote="androvm" name="platform_system_extras" revision="genymotion-4.3.3_r3.1" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
-  <project path="system/vold" name="platform/system/vold" groups="pdk" />
+  <project path="system/vold" remote="androvm" name="platform_system_vold" revision="genymotion-4.3.3_r3.1" groups="pdk" />
   <project path="tools/adt/eclipse" name="platform/tools/adt/eclipse" groups="notdefault,tools" />
   <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
   <project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
@@ -381,5 +391,13 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="external/busybox" remote="androvm" name="platform_external_busybox" revision="genymotion-4.3.3_r3.1" />
+  <!-- Genymotion device !-->
+  <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-4.3.3_r3.1" />
+  <!-- File manager from CyanogenMod !-->
+  <project path="packages/apps/CMFileManager" remote="github" name="CyanogenMod/android_packages_apps_CMFileManager" revision="cm-10.1" />
+  <!-- Super user app & dependencies from Koushik Dutta !-->
+  <project path="external/apps/Superuser" remote="github" name="koush/Superuser" revision="master" />
+  <project path="external/apps/Widgets" remote="github" name="koush/Widgets" revision="master" />
 
 </manifest>
