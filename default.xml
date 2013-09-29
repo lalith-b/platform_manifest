@@ -213,7 +213,6 @@
   <project path="external/webkit" remote="androvm" name="platform_external_webkit" revision="genymotion-4.3_r3.1"/>
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
-  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" />
   <project path="external/wpa_supplicant_8" remote="androvm" name="platform_external_wpa_supplicant_8" groups="pdk" revision="genymotion-4.3_r3.1" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
@@ -223,7 +222,6 @@
   <project path="frameworks/av" remote="androvm" name="platform_frameworks_av" revision="genymotion-4.3_r3.1" groups="pdk" />
   <project path="frameworks/base" remote="androvm" name="platform_frameworks_base" revision="genymotion-4.3_r3.1" />
   <project path="frameworks/compile/libbcc" remote="androvm" name="platform_frameworks_compile_libbcc" revision="genymotion-4.3_r3.1" groups="pdk" />
-  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
