@@ -21,7 +21,7 @@
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="bionic" remote="androvm" name="platform_bionic" groups="pdk" revision="genymotion-4.3_r3.1" />
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
-  <project path="bootable/diskinstaller" remote="androvm" name="platform_bootable_diskinstaller" revision="genymotion-4.1.1_r6.1" />
+  <project path="bootable/diskinstaller" remote="androvm" name="platform_bootable_diskinstaller" revision="genymotion-4.3_r3.1" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts" />
   <project path="dalvik" remote="androvm" name="platform_dalvik" revision="genymotion-4.3_r3.1" />
