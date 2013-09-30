@@ -389,7 +389,7 @@
   <project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
-  <project path="external/busybox" remote="androvm" name="platform_external_busybox" revision="genymotion-4.2.2_r1.2" />
+  <project path="external/busybox" remote="androvm" name="platform_external_busybox" revision="genymotion-4.3_r3.1" />
   <!-- Genymotion device !-->
   <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-4.3_r3.1" />
   <!-- File manager from CyanogenMod !-->
