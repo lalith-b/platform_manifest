@@ -181,6 +181,7 @@
   <project path="system/netd" name="platform/system/netd" />
   <project path="system/vold" name="platform/system/vold" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
+  <project path="external/busybox" remote="androvm" name="platform_external_busybox" revision="genymotion-2.3.7_r1" />
   <!-- Genymotion device !-->
   <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-2.3.7_r1" />
   <!-- ALSA !-->
