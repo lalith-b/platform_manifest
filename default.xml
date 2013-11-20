@@ -20,6 +20,8 @@
   <project path="bionic" remote="androvm" name="platform_bionic" revision="genymotion-4.1.1_r6.1" />
   <project path="development" name="platform/development" />
   <project path="frameworks/base" remote="androvm" name="platform_frameworks_base" revision="genymotion-4.1.1_r6.1" />
+  <project path="frameworks/native" remote="androvm" name="platform_frameworks_native" revision="genymotion-4.1.1_r6.1" />
+  <project path="sdk" remote="androvm" name="platform_sdk" revision="genymotion-4.1.1_r6.1" />
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="prebuilts/eclipse" name="platform/prebuilts/eclipse" />
   <project path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.6" />
@@ -42,6 +44,18 @@
   <project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" />
-  <project path="sdk" remote="androvm" name="platform_sdk" revision="genymotion-4.1.1_r6.1" />
+  <project path="external/zlib" name="platform/external/zlib" />
+  <project path="libcore" remote="androvm" name="platform_libcore" revision="genymotion-4.1.1_r6.1" />  <project path="external/junit" name="platform/external/junit" />
+  <project path="external/apache-http" name="platform/external/apache-http" />
+  <project path="frameworks/support" name="platform/frameworks/support" />
+  <project path="external/nist-sip" name="platform/external/nist-sip" />
+  <project path="external/libphonenumber" name="platform/external/libphonenumber" />
+  <project path="external/tagsoup" name="platform/external/tagsoup" />
+  <project path="external/stlport" name="platform/external/stlport" />
+  <project path="bootable/diskinstaller" remote="androvm" name="platform_bootable_diskinstaller" revision="genymotion-4.1.1_r6.1" />
+  <project path="system/core" remote="androvm" name="platform_system_core" revision="genymotion-4.1.1_r6.1" />
+  <project path="external/expat" name="platform/external/expat" />
+  <project path="external/libpng" name="platform/external/libpng" />
+  <project path="device/androVM" remote="androvm" name="device_androVM" revision="genymotion-4.1.1_r6.1" />
 
 </manifest>
