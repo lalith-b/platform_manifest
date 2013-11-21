@@ -74,7 +74,7 @@
   <project path="libcore" remote="androvm" name="platform_libcore" revision="genymotion-4.4_r1" />  <project path="external/junit" name="platform/external/junit" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="frameworks/support" name="platform/frameworks/support" />
-  <project path="external/openssl" remote="androvm" name="platform_external_openssl" groups="pdk" revision="genymotion_tools" />
+  <project path="external/openssl" remote="androvm" name="platform_external_openssl" groups="pdk" revision="genymotion-tools" />
   <project path="external/nist-sip" name="platform/external/nist-sip" />
   <project path="external/libphonenumber" name="platform/external/libphonenumber" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
