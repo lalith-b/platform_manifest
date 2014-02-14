@@ -441,7 +441,7 @@
   <!-- File manager from CyanogenMod !-->
   <project path="packages/apps/CMFileManager" remote="github" name="CyanogenMod/android_packages_apps_CMFileManager" revision="cm-11.0" />
   <!-- Super user app & dependencies from Koushik Dutta !-->
-  <project path="external/apps/Superuser" remote="github" name="CyanogenMod/Superuser" revision="cm-11.0" />
+  <project path="external/apps/Superuser" remote="androvm" name="platform_packages_apps_Superuser" revision="genymotion-4.4.2_r1" />
   <project path="external/apps/Widgets" remote="github" name="koush/Widgets" revision="master" />
 
 </manifest>
