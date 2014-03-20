@@ -445,6 +445,6 @@
   <project path="external/apps/Widgets" remote="github" name="koush/Widgets" revision="master" />
   <!-- HD videos support from android-x86 !-->
   <project path="external/ffmpeg" remote="androvm" name="platform_external_ffmpeg" revision="kitkat-x86" />
-  <project path="external/stagefright-plugins" remote="androvm" name="platform_external_stagefright-plugins" revision="kitkat-x86" />
+  <project path="external/stagefright-plugins" remote="androvm" name="platform_external_stagefright-plugins" revision="genymotion-dev" />
 
 </manifest>
