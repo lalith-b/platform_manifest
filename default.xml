@@ -24,7 +24,7 @@
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" remote="androvm" name="platform_bootable_diskinstaller" revision="genymotion-4.4.2_r1" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
-  <project path="cts" name="platform/cts" groups="cts" />
+  <project path="cts" remote="androvm" name="platform_cts" revision="genymotion-4.4.2_r1" groups="cts" />
   <project path="dalvik" remote="androvm" name="platform_dalvik" revision="genymotion-4.4.2_r1" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
