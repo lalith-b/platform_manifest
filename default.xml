@@ -251,7 +251,7 @@
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" remote="androvm" name="platform_frameworks_av" revision="genymotion-4.4.4_r1" groups="pdk" />
   <project path="frameworks/base" remote="androvm" name="platform_frameworks_base" revision="genymotion-4.4.4_r1" />
-  <project path="frameworks/compile/libbcc" remote="androvm" name="platform_frameworks_compile_libbcc" revision="genymotion-4.4.4_r1" groups="pdk" />
+  <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
   <project path="frameworks/ex" name="platform/frameworks/ex" />
@@ -420,7 +420,7 @@
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk" />
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
-  <project path="sdk" remote="androvm" name="platform_sdk" revision="genymotion-4.4.4_r1" />
+  <project path="sdk" name="platform/sdk" />
   <project path="system/core" remote="androvm" name="platform_system_core" revision="genymotion-4.4.4_r1" groups="pdk" />
   <project path="system/extras" remote="androvm" name="platform_system_extras" revision="genymotion-4.4.4_r1" groups="pdk" />
   <project path="system/media" name="platform/system/media" groups="pdk" />
